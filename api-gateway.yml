@@ -7,11 +7,11 @@ spring:
         webflux:
           routes:
             - id: movie-service
-              uri: lb://MOVIE-SERVICE
+              uri: lb://movie-service
               predicates:
                 - Path=/movies/**
             - id: booking-service
-              uri: lb://BOOKING-SERVICE
+              uri: lb://booking-service
               predicates:
                 - Path=/bookings/**
 
