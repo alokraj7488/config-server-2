@@ -3,7 +3,6 @@ spring:
     name: api-gateway
   cloud:
     gateway:
-      server:
           routes:
             - id: movie-service
               uri: lb://movie-service
